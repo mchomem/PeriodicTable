@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="application/javascript" src="js/index.js"></script>
+        <script type="application/javascript" src="js/element.js"></script>
+        <script type="application/javascript" src="js/elementProvider.js"></script>
+        <script type="application/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                ElementProvider.init();
+                Index.init();
+            });
+        </script>
+    </head>
+    <body>
+        <table id="periodicTable">
+        </table>
+        <table style="font-family: verdana; font-size:14px;">
+            <tr>
+                <td>
+                    <label>Atomic Number</label>
+                </td>
+                <td>
+                    <div id="divAtomicNumber"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Chemical symbol</label>
+                </td>
+                <td>
+                    <div id="divChemicalSymbol"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Element name</label>
+                </td>
+                <td>
+                    <div id="divElementName"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Atomic weight</label>
+                </td>
+                <td>
+                    <div id="divAtomicWeight"></div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
