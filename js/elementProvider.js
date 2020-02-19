@@ -1,13 +1,13 @@
 ElementProvider = {
 
     self: this
-    
-    , init: function() {
+
+    , init: function () {
         self.$data = [];
         this.load();
     }
 
-    , load: function() {
+    , load: function () {
         self.$data.push(new Element(1, 'H', 'hidrogênio', '1,0078'));
         self.$data.push(new Element(2, 'He', 'hélio', '4,0028'));
         self.$data.push(new Element(3, 'Li', 'lítio', '6,938'));
@@ -141,7 +141,7 @@ ElementProvider = {
         return self.$data;
     }
 
-    , find: function(id) {
+    , find: function (id) {
         return self.$data.find(el => el.atomicNumber === id);
     }
 
